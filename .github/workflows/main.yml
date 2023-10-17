@@ -19,4 +19,5 @@ jobs:
         run: pip3 install Flask
       - name: Executar app
         run: python3 api-calculadora.py
-      
+      - name: Prova 1 curl
+        run: curl -i 127.0.0.1:5000/suma/4/8
