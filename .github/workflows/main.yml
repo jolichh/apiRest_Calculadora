@@ -13,9 +13,7 @@ jobs:
         run: echo "Funciona primera prova"
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install Flask
-        run: apt install python3-pip
-      - name: Install pip3
+      - name: Install pip3 Flask
         run: pip3 install Flask
       - name: Executar app
         run: python3 api_calculadora.py
