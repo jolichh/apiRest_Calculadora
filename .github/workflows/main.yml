@@ -19,5 +19,13 @@ jobs:
         run: pip3 install Flask
       - name: Executar app
         run: python3 api_calculadora.py
-      - name: Prova 1 curl
+      - name: Prova principal curl
+        run: curl -i 127.0.0.1:5000/
+      - name: Prova suma
         run: curl -i 127.0.0.1:5000/suma/4/8
+      - name: Prova resta
+        run: curl -i 127.0.0.1:5000/resta/8/4
+      - name: Prova multiplica
+        run: curl -i 127.0.0.1:5000/multiplica/4/5
+      - name: Prova divideix
+        run: curl -i 127.0.0.1:5000/divideix/20/5
