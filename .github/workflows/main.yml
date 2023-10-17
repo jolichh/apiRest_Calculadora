@@ -1,0 +1,22 @@
+name: Proves de API-REST a GitHub
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  una_tasca_automatica:
+    runs-on: ubutu-latest
+    steps:
+      - name: Mostra un missatge per consola
+        run: echo "Funciona primera prova"
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Flask
+        run: apt install python3-pip
+      - name: Install pip3
+        run: pip3 install Flask
+      - name: Executar app
+        run: python3 api-calculadora.py
+      
